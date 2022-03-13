@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+{%extends 'base.html'%}
+
+{%block   body_block%}
+
+
+<div class="container">
+       <div class="row">
+           <div class="col-4"></div>
+           <div class="col-4">
+              <div class="card" style="width: 18rem;">
+  <div class="card-header">
+    {{book.book_name}}
+  </div>
+  <ul class="list-group list-group-flush">
+        <li class="list-group-item">{{book.author}}</li>
+        <li class="list-group-item">{{book.category}}</li>
+        <li class="list-group-item">{{book.review}}</li>
+        <li class="list-group-item">{{book.favourites}}</li>
+        <li class="list-group-item">{{book.image}}</li>
+        <li class="list-group-item">{{book.user}}</li>
+
+
+  </ul>
+</div>
+           </div>
+           <div class="col-4"></div>
+       </div>
+
+</div>
+{%endblock%}
+</html>
